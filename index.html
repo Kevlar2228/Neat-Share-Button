@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Share Button Click Event</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+      </head>
+      <body>
+
+            <div class="innerRing">
+                  <div class="innerRing-content">
+                        <i class="fas fa-share"></i>
+                  </div>
+            </div>
+
+            <div class="shareButton">
+                  <div class="outerRing">
+                        <div class="outerRing-button" id="one"><i class="fab fa-facebook-f"></i></div>
+                        <div class="outerRing-button" id="two"><i class="fab fa-instagram"></i></div>
+                        <div class="outerRing-button" id="three"><i class="fab fa-twitter"></i></div>
+                        <div class="outerRing-button" id="four"><i class="fab fa-linkedin-in"></i></div>
+                  </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+            <script>
+                  $(".innerRing").click(function() {
+                        $('.outerRing').toggleClass("cascade");
+                  })
+            </script>
+
+      </body>
+</html>
